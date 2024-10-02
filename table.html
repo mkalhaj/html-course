@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Table Demo</title>
+</head>
+<body>
+    <header>
+        <h1>I will create my first 3 table</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#first-table">My daily scheduale</a> 
+                </li>
+                <li>
+                    <a href="#second-table">Gold Price</a>
+                </li>
+                <li>
+                    <a href="#third-table">Calendar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <article id="first-table">
+            <h3>Here is What I do!!!</h3>
+            <table>
+                <caption>My daily scheduale</caption>
+                <thead>
+                    <tr> 
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup"  rowspan="3">Morning</th>
+                        <td><time datetime="08:00">8 am</time> - <time datetime="09:00">9 am</time></td>
+                        <td>Drink Coffee</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="09:00">9 am</time> - <time datetime="11:00">11 am</time></td>
+                        <td>Write HTML codes</td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <time datetime="11:00">11 am</time> - <time datetime="12:00">12 pm</time>
+                    </td>
+                    <td>Play Piano</td>
+                </tr>
+                   
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Afternoon</th>
+                        <td><time datetime="12:00">12 pm</time> - <time datetime="13:00">1 pm</time></td>
+                        <td>Lunch Time</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="13:00">1 pm</time> - <time datetime="18:00">6 pm</time></td>
+                        <td>Coding again</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td><time datetime="18:00">6 pm</time> - <time datetime="22:00">10 pm</time></td>
+                        <td>Watch TV</td>
+                    </tr>
+                </tbody>
+                    <tfoot> 
+                        <p><a href="#">Back to top</a></p>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td colspan="2">
+                            <aside>
+                                <details>
+                                    <summary>Guse What I Do at <mark>Night</mark>?
+                                    </summary>
+                                    <p>Of-course I <em>Try</em> to <strong>SLEEP!</strong></p>
+                                </details>
+                            </aside>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+                <hr>
+                <br>
+        </article>
+        <article id="second-table">
+            <h3>Updated Daily Gold Price</h3>
+            <table>
+                <caption> Gold Price &Gt;</caption>
+                <thead>
+                    <tr> 
+                    <th>&nbsp;</th>
+                    <th scope="col">Buy at</th>
+                    <th scope="col">Sale at</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>100$</td>
+                        <td>110$</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>120$</td>
+                        <td>130$</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td>140$</td>
+                        <td>150$</td>
+                    </tr>
+                    <tr>
+                        <td>price updated every 12 hours</td>
+                        <td colspan="2">Do you want to buy or sale?</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <p><a href="#">Back to top</a></p>
+                    <tr>
+                        <td colspan="3">contact us to learn more<a href="index.html">&Gt;&Gt;&Gt;</a>
+                        </td>
+                      </tr>
+                </tfoot>
+            </table>
+
+        </article>
+        <article id="third-table">
+            <h3>Calendar</h3>
+            <table>
+                <caption>October Calendar</caption>
+                <thead>
+                    <tr>
+                        
+                            <th scope="row" colspan="2">October</>
+                            <th scope="row" colspan="2">2024</th>
+                        
+                    </tr>
+                    <tr><td colspan="7"></td>&nbsp;</tr>
+                   
+                </thead>
+                <tr>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>tue</td>
+                    <td>Wen</td>
+                    <td>thu</td>
+                    <td>fri</td>
+            </tr>
+            
+                
+                <tbody>
+                    <td>&nbsp;</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td> <mark><a href="index.html">4</a></mark></td>
+                <td>5</td>
+                <td>6</td>
+                <tr><td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td> </tr>
+                    <tr><td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td> </tr>
+                        <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td> </tr>
+                            <tr><td>28</td>
+                            <td>29</td>
+                        <td>30</td>
+                    <td>31</td><td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                </tbody>
+                <tfoot>
+                    <p><a href="#">back to top</a></p>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        &Lt;&Lt;&Lt; &copy;<a href="/">Mohammad Kamal</a> &Gt;&Gt;&Gt;
+    </footer>
+</body>
+
+</html>

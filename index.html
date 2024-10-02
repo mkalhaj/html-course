@@ -10,10 +10,9 @@
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-        <h1>My Goals For The Year</h1>
-
-        <hr>
-        <nav>
+        <header> 
+         <h1>My Goals For The Year</h1>
+         <nav aria-label="primary navigation">
             <ul>   
                 <li>
                     <a href="#html">Learn HTML</a>
@@ -21,80 +20,184 @@
                 <li> 
                     <a href="#vacation">Planning a vacation</a>
                 </li>
-                
+                <li>
+                    <a href="table.html">My Three Tables</a>
+                </li>
             </ul>
-
-        </nav>
+         </nav>
+        </header>
         <hr>
-        <section id="html">
-        <h2>I am ready to learn HTML</h2>
-        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning html5" width="300" height="300">
-        <figure>
-            <figcaption>
-                an example of HTML5 COde
-            </figcaption>
-            <p>
-                <code>&lt;h1&gt;hellow world&lt;/h1&gt;</code></p>
-        </figure>
-        <p>This is my first web page</p>
-
-        <h3>My daily scheduale</h3>
-        <p>Let me tell you how:</p>
-        <ol>
-            <li>... I learn more about web dev</li>
-            <li>... I plan out my scheduale</li>
-            <li>... I use resources from <abbr title="Mozilla developer network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></li>
-        </ol>
-    </section>
-        <hr>
-
-    <section id="vacation"> 
-        <h2>I am also planning for a vacation</h2>
-        <p>I have been working hard and <em>I realy need a gatway</em> </p>
-        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach</p>
-
-        <h3>places I would like to visit</h3>
-
-        
-            <p>I've heared good things about the Caribbean</p>
-            <figure>
-            <img src="img/caribbean.jpg" alt="Caribean beach" title="I would like to visit Caribean beach" width="400" height="225" loading="lazy">
-            <figcaption>
-                Caribbean Beach Getaway
-            </figcaption>
-        </figure>
-        
-        <ul>
-            <li>I've heared good thingd abiut goinig here:</li>
-    
-             <li><address>
-            Margaritaville Island Reserve Riviera Cancun <br>
-            Bahia Petempich Puretro Morelos, Mexico <br>
-            Colonia Morelos, Mexico 77580
-            </address></li>
-        </ul>
-            <figure>  <figcaption>  
-            <img src="img/vacation.jpg" alt="Cancun vacation" title="it's 5 O'clock somewhere" loading="lazy" width="400" height="267">
-            A Caribean Vacation Image
-        </figcaption>
-        </figure>
+        <main>  
+            <article id="html">
+            <h2>I am ready to learn HTML</h2>
             
-        
-        <!-- TO DO: Add More places-->
-        <h3>places I want to avoid</h3>
-        <p> Any where cold. <strong>No way!</strong> </p>
-        <dl>
-            <dt>The North Pole</dt>
-            <dd>I hear this is <strong>cold.</strong></dd>
-            <dd>This is also cold.</dd>
-            <dd>These are also cold.</dd>
-        </dl>
-    </section>
+            <p>This is my first web page</p>
+            <section> 
+                <h3>HTML5</h3>
+            <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning html5" width="300" height="300">
+            <figure>
+                <figcaption>
+                    an example of HTML5 COde
+                </figcaption>
+                <p>
+                   <code>&lt;h1&gt;hellow world&lt;/h1&gt;</code>
+                </p>
+            </figure>
+        </section>
+        <section> 
 
+            <h3>My daily scheduale</h3>
+            <p>Let me tell you how:</p>
+            <ol>
+                <li>... I learn more about web dev</li>
+                <li>... I plan out my scheduale</li>
+                <li>... I use resources from <abbr title="Mozilla developer network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></li>
+            </ol>
+            <Aside>
+                <details>
+                    <summary>
+                        Guse the <mark>  number of houre </mark> I code per day
+                    </summary>
+                    <p> 
+                        I start at <time datetime="08:00">8 am</time> and I write codes for 3 hours every morning
+                    </p>
+                </details>
+            </Aside>
+            <br>
+            <table>
+                <caption>My daily scheduale</caption>
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+             
+            </thead>
+            <tbody> 
+                <tr>
+                    <th>morning</th>
+                    <td>
+                        <time datetime="08:00">8 am</time>- <time datetime="11:00">11 am</time> 
+                        <td>write code</td>
+                    </td>
+                </tr>
+                <tr>
+                    <th>afternoon</th>
+                    <td>
+                        <time datetime="11:00">11 am</time>- <time datetime="12:00">12 pm</time>
+                    </td>
+                    <td>eat lunch</td>
+                </tr>
+                </tr>
+                <tr>
+                    <th>Evening</th>
+                    <td>
+                        <time datetime="12:00">12 pm</time>- <time datetime="17:00">5pm</time>
+                    </td>
+                    <td>study for other courses</td>
+                </tr>
+                <tr>
+                    <th>Night</th>
+                    <td rowspan="2">All other times</td>
+                    <td>Free Time</td>
+                </tr>
+                <tr>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="3">And That's What I Do Everyday, 5 days a week, eat, sleep, code and recharge.</td>
+                </tr>
+            </tfoot>
+            </table>
+        </section>
+        </article>
+            <hr>
+
+        <article id="vacation"> 
+            <h2>I am also planning for a vacation</h2>
+            <p>I have been working hard and <em>I realy need a gatway</em> </p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach</p>
+
+            <h3>places I would like to visit</h3>
+
+            
+                <p>I've heared good things about the Caribbean</p>
+                <figure>
+                <img src="img/caribbean.jpg" alt="Caribean beach" title="I would like to visit Caribean beach" width="400" height="225" loading="lazy">
+                <figcaption>
+                    Caribbean Beach Getaway
+                </figcaption>
+            </figure>
+            
+            <ul>
+                <li>I've heared good thingd abiut goinig here:</li>
+        
+                <li><address>
+                Margaritaville Island Reserve Riviera Cancun <br>
+                Bahia Petempich Puretro Morelos, Mexico <br>
+                Colonia Morelos, Mexico 77580
+                </address></li>
+            </ul>
+                <figure>  <figcaption>  
+                <img src="img/vacation.jpg" alt="Cancun vacation" title="it's 5 O'clock somewhere" loading="lazy" width="400" height="267">
+                A Caribean Vacation Image
+            </figcaption>
+            </figure>
+                
+            
+            <!-- TO DO: Add More places-->
+            <h3>places I want to avoid</h3>
+            <p> Any where cold. <strong>No way!</strong> </p>
+            <dl>
+                <dt>The North Pole</dt>
+                <dd>I hear this is <strong>cold.</strong></dd>
+                <dd>This is also cold.</dd>
+                <dd>These are also cold.</dd>
+            </dl>
+        </article>
         <hr>
-        &Lt;&Lt;&Lt; &copy; <a href="about.html">Mohammad Kamal</a>  &Gt;&Gt;&Gt;
+        <!-- <table>
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Country</th>
+            </tr>
+            
+            <tr>
+                <td>mohammad</td>
+                <td>1981</td> 
+                <td>Jordan</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>1990</td> 
+                <td>Lebanon</td>
+            </tr>
+            <tr>
+                <td>Mona</td>
+                <td>19890</td> 
+                <td>Iraq</td>
+            </tr>
+            <td rowspan="3">Group A</td>
+            <td>1991</td>
+            <td>syria</td>
+            <tr><td>1993</td>
+            <td>saudi</td></tr>
+            <tr><td>1997</td>
+            <td>palestine</td></tr>
+            <tr><td colspan="3">what they are?</td></tr>
+        </table> -->
+</main>
+        <hr>
+    <footer> 
+        <p>&Lt;&Lt;&Lt; &copy; <a href="about.html">Mohammad Kamal</a>  &Gt;&Gt;&Gt;
+        </p>
         <p>
             <a href="#">Back to top</a>
         </p>
+    </footer> 
     </body>
 </html>
